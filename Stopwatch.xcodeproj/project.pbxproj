@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF44FE1118772AD400C16671 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF44FE1018772AD400C16671 /* Foundation.framework */; };
+		CF44FE1318772AD400C16671 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF44FE1218772AD400C16671 /* CoreGraphics.framework */; };
+		CF44FE1518772AD400C16671 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF44FE1418772AD400C16671 /* UIKit.framework */; };
+		CF44FE1B18772AD400C16671 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF44FE1918772AD400C16671 /* InfoPlist.strings */; };
+		CF44FE1D18772AD400C16671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE1C18772AD400C16671 /* main.m */; };
+		CF44FE2118772AD400C16671 /* TIMEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE2018772AD400C16671 /* TIMEAppDelegate.m */; };
+		CF44FE2418772AD400C16671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF44FE2218772AD400C16671 /* Main.storyboard */; };
+		CF44FE2718772AD400C16671 /* TIMEMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE2618772AD400C16671 /* TIMEMasterViewController.m */; };
+		CF44FE2C18772AD400C16671 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF44FE2B18772AD400C16671 /* Images.xcassets */; };
+		CF44FE3318772AD400C16671 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF44FE3218772AD400C16671 /* XCTest.framework */; };
+		CF44FE3418772AD400C16671 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF44FE1018772AD400C16671 /* Foundation.framework */; };
+		CF44FE3518772AD400C16671 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF44FE1418772AD400C16671 /* UIKit.framework */; };
+		CF44FE3D18772AD400C16671 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF44FE3B18772AD400C16671 /* InfoPlist.strings */; };
+		CF44FE3F18772AD400C16671 /* TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE3E18772AD400C16671 /* TimerTests.m */; };
+		CF44FE491877395200C16671 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF44FE481877395200C16671 /* CoreData.framework */; };
+		CF44FE871877397100C16671 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE4E1877397100C16671 /* MagicalImportFunctions.m */; };
+		CF44FE881877397100C16671 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE501877397100C16671 /* NSAttributeDescription+MagicalDataImport.m */; };
+		CF44FE891877397100C16671 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE521877397100C16671 /* NSEntityDescription+MagicalDataImport.m */; };
+		CF44FE8A1877397100C16671 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE541877397100C16671 /* NSNumber+MagicalDataImport.m */; };
+		CF44FE8B1877397100C16671 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE561877397100C16671 /* NSObject+MagicalDataImport.m */; };
+		CF44FE8C1877397100C16671 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE581877397100C16671 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		CF44FE8D1877397100C16671 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE5A1877397100C16671 /* NSString+MagicalDataImport.m */; };
+		CF44FE8E1877397100C16671 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE5D1877397100C16671 /* NSManagedObject+MagicalAggregation.m */; };
+		CF44FE8F1877397100C16671 /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE5F1877397100C16671 /* NSManagedObject+MagicalDataImport.m */; };
+		CF44FE901877397100C16671 /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE611877397100C16671 /* NSManagedObject+MagicalFinders.m */; };
+		CF44FE911877397100C16671 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE631877397100C16671 /* NSManagedObject+MagicalRecord.m */; };
+		CF44FE921877397100C16671 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE651877397100C16671 /* NSManagedObject+MagicalRequests.m */; };
+		CF44FE931877397100C16671 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE681877397100C16671 /* NSManagedObjectContext+MagicalObserving.m */; };
+		CF44FE941877397100C16671 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE6A1877397100C16671 /* NSManagedObjectContext+MagicalRecord.m */; };
+		CF44FE951877397100C16671 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE6C1877397100C16671 /* NSManagedObjectContext+MagicalSaves.m */; };
+		CF44FE961877397100C16671 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE6E1877397100C16671 /* NSManagedObjectContext+MagicalThreading.m */; };
+		CF44FE971877397100C16671 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE701877397100C16671 /* NSManagedObjectModel+MagicalRecord.m */; };
+		CF44FE981877397100C16671 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE721877397100C16671 /* NSPersistentStore+MagicalRecord.m */; };
+		CF44FE991877397100C16671 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE741877397100C16671 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		CF44FE9A1877397100C16671 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE771877397100C16671 /* MagicalRecord+Actions.m */; };
+		CF44FE9B1877397100C16671 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE791877397100C16671 /* MagicalRecord+ErrorHandling.m */; };
+		CF44FE9C1877397100C16671 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE7B1877397100C16671 /* MagicalRecord+iCloud.m */; };
+		CF44FE9D1877397100C16671 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE7D1877397100C16671 /* MagicalRecord+Options.m */; };
+		CF44FE9E1877397100C16671 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE7F1877397100C16671 /* MagicalRecord+Setup.m */; };
+		CF44FE9F1877397100C16671 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE811877397100C16671 /* MagicalRecord+ShorthandSupport.m */; };
+		CF44FEA01877397100C16671 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FE831877397100C16671 /* MagicalRecord.m */; };
+		CF44FEA318773BB600C16671 /* timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF44FEA118773BB600C16671 /* timer.xcdatamodeld */; };
+		CF44FEA618773F7200C16671 /* Observation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FEA518773F7200C16671 /* Observation.m */; };
+		CF44FEA918773F7300C16671 /* Time.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FEA818773F7300C16671 /* Time.m */; };
+		CF44FEAD1877462400C16671 /* TIMEDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FEAC1877462400C16671 /* TIMEDetailTableViewController.m */; };
+		CF44FEB01877484600C16671 /* identifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FEAF1877484600C16671 /* identifierCell.m */; };
+		CF44FEB31877485A00C16671 /* dateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FEB21877485A00C16671 /* dateCell.m */; };
+		CF44FEB61877486600C16671 /* timeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44FEB51877486600C16671 /* timeCell.m */; };
+		CFBC71BC1878A05D00D6A72F /* TIMEAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBC71B91878A05D00D6A72F /* TIMEAnimationController.m */; };
+		CFBC71BD1878A05D00D6A72F /* TIMEReceiveFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBC71BB1878A05D00D6A72F /* TIMEReceiveFileViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF44FE3618772AD400C16671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF44FE0518772AD400C16671 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF44FE0C18772AD400C16671;
+			remoteInfo = Timer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF44FE0D18772AD400C16671 /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF44FE1018772AD400C16671 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF44FE1218772AD400C16671 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF44FE1418772AD400C16671 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF44FE1818772AD400C16671 /* Stopwatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stopwatch-Info.plist"; sourceTree = "<group>"; };
+		CF44FE1A18772AD400C16671 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF44FE1C18772AD400C16671 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF44FE1E18772AD400C16671 /* Stopwatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stopwatch-Prefix.pch"; sourceTree = "<group>"; };
+		CF44FE1F18772AD400C16671 /* TIMEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIMEAppDelegate.h; sourceTree = "<group>"; };
+		CF44FE2018772AD400C16671 /* TIMEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TIMEAppDelegate.m; sourceTree = "<group>"; };
+		CF44FE2318772AD400C16671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF44FE2518772AD400C16671 /* TIMEMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIMEMasterViewController.h; sourceTree = "<group>"; };
+		CF44FE2618772AD400C16671 /* TIMEMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TIMEMasterViewController.m; sourceTree = "<group>"; };
+		CF44FE2B18772AD400C16671 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF44FE3118772AD400C16671 /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF44FE3218772AD400C16671 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CF44FE3A18772AD400C16671 /* StopwatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StopwatchTests-Info.plist"; sourceTree = "<group>"; };
+		CF44FE3C18772AD400C16671 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF44FE3E18772AD400C16671 /* TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerTests.m; sourceTree = "<group>"; };
+		CF44FE481877395200C16671 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CF44FE4D1877397100C16671 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
+		CF44FE4E1877397100C16671 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
+		CF44FE4F1877397100C16671 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		CF44FE501877397100C16671 /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		CF44FE511877397100C16671 /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		CF44FE521877397100C16671 /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		CF44FE531877397100C16671 /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
+		CF44FE541877397100C16671 /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
+		CF44FE551877397100C16671 /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		CF44FE561877397100C16671 /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		CF44FE571877397100C16671 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		CF44FE581877397100C16671 /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		CF44FE591877397100C16671 /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
+		CF44FE5A1877397100C16671 /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
+		CF44FE5C1877397100C16671 /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
+		CF44FE5D1877397100C16671 /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
+		CF44FE5E1877397100C16671 /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		CF44FE5F1877397100C16671 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		CF44FE601877397100C16671 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
+		CF44FE611877397100C16671 /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
+		CF44FE621877397100C16671 /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
+		CF44FE631877397100C16671 /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
+		CF44FE641877397100C16671 /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
+		CF44FE651877397100C16671 /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
+		CF44FE671877397100C16671 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
+		CF44FE681877397100C16671 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
+		CF44FE691877397100C16671 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
+		CF44FE6A1877397100C16671 /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
+		CF44FE6B1877397100C16671 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
+		CF44FE6C1877397100C16671 /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
+		CF44FE6D1877397100C16671 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
+		CF44FE6E1877397100C16671 /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
+		CF44FE6F1877397100C16671 /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
+		CF44FE701877397100C16671 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
+		CF44FE711877397100C16671 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
+		CF44FE721877397100C16671 /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		CF44FE731877397100C16671 /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
+		CF44FE741877397100C16671 /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
+		CF44FE761877397100C16671 /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+Actions.h"; sourceTree = "<group>"; };
+		CF44FE771877397100C16671 /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+Actions.m"; sourceTree = "<group>"; };
+		CF44FE781877397100C16671 /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
+		CF44FE791877397100C16671 /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
+		CF44FE7A1877397100C16671 /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
+		CF44FE7B1877397100C16671 /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
+		CF44FE7C1877397100C16671 /* MagicalRecord+Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+Options.h"; sourceTree = "<group>"; };
+		CF44FE7D1877397100C16671 /* MagicalRecord+Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+Options.m"; sourceTree = "<group>"; };
+		CF44FE7E1877397100C16671 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+Setup.h"; sourceTree = "<group>"; };
+		CF44FE7F1877397100C16671 /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+Setup.m"; sourceTree = "<group>"; };
+		CF44FE801877397100C16671 /* MagicalRecord+ShorthandSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+ShorthandSupport.h"; sourceTree = "<group>"; };
+		CF44FE811877397100C16671 /* MagicalRecord+ShorthandSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+ShorthandSupport.m"; sourceTree = "<group>"; };
+		CF44FE821877397100C16671 /* MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecord.h; sourceTree = "<group>"; };
+		CF44FE831877397100C16671 /* MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecord.m; sourceTree = "<group>"; };
+		CF44FE841877397100C16671 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
+		CF44FE851877397100C16671 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
+		CF44FE861877397100C16671 /* MagicalRecordVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordVersion.h; sourceTree = "<group>"; };
+		CF44FEA218773BB600C16671 /* timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = timer.xcdatamodel; sourceTree = "<group>"; };
+		CF44FEA418773F7200C16671 /* Observation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observation.h; sourceTree = "<group>"; };
+		CF44FEA518773F7200C16671 /* Observation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observation.m; sourceTree = "<group>"; };
+		CF44FEA718773F7300C16671 /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		CF44FEA818773F7300C16671 /* Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Time.m; sourceTree = "<group>"; };
+		CF44FEAB1877462400C16671 /* TIMEDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMEDetailTableViewController.h; sourceTree = "<group>"; };
+		CF44FEAC1877462400C16671 /* TIMEDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMEDetailTableViewController.m; sourceTree = "<group>"; };
+		CF44FEAE1877484600C16671 /* identifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = identifierCell.h; sourceTree = "<group>"; };
+		CF44FEAF1877484600C16671 /* identifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = identifierCell.m; sourceTree = "<group>"; };
+		CF44FEB11877485A00C16671 /* dateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateCell.h; sourceTree = "<group>"; };
+		CF44FEB21877485A00C16671 /* dateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dateCell.m; sourceTree = "<group>"; };
+		CF44FEB41877486600C16671 /* timeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeCell.h; sourceTree = "<group>"; };
+		CF44FEB51877486600C16671 /* timeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timeCell.m; sourceTree = "<group>"; };
+		CFBC71B81878A05D00D6A72F /* TIMEAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMEAnimationController.h; sourceTree = "<group>"; };
+		CFBC71B91878A05D00D6A72F /* TIMEAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMEAnimationController.m; sourceTree = "<group>"; };
+		CFBC71BA1878A05D00D6A72F /* TIMEReceiveFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMEReceiveFileViewController.h; sourceTree = "<group>"; };
+		CFBC71BB1878A05D00D6A72F /* TIMEReceiveFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMEReceiveFileViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF44FE0A18772AD400C16671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44FE491877395200C16671 /* CoreData.framework in Frameworks */,
+				CF44FE1318772AD400C16671 /* CoreGraphics.framework in Frameworks */,
+				CF44FE1518772AD400C16671 /* UIKit.framework in Frameworks */,
+				CF44FE1118772AD400C16671 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44FE2E18772AD400C16671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44FE3318772AD400C16671 /* XCTest.framework in Frameworks */,
+				CF44FE3518772AD400C16671 /* UIKit.framework in Frameworks */,
+				CF44FE3418772AD400C16671 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF44FE0418772AD400C16671 = {
+			isa = PBXGroup;
+			children = (
+				CF44FE1618772AD400C16671 /* Timer */,
+				CF44FE3818772AD400C16671 /* TimerTests */,
+				CF44FE0F18772AD400C16671 /* Frameworks */,
+				CF44FE0E18772AD400C16671 /* Products */,
+				CF44FE4A1877397100C16671 /* MagicalRecord */,
+			);
+			sourceTree = "<group>";
+		};
+		CF44FE0E18772AD400C16671 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE0D18772AD400C16671 /* Stopwatch.app */,
+				CF44FE3118772AD400C16671 /* StopwatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF44FE0F18772AD400C16671 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE481877395200C16671 /* CoreData.framework */,
+				CF44FE1018772AD400C16671 /* Foundation.framework */,
+				CF44FE1218772AD400C16671 /* CoreGraphics.framework */,
+				CF44FE1418772AD400C16671 /* UIKit.framework */,
+				CF44FE3218772AD400C16671 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF44FE1618772AD400C16671 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE1F18772AD400C16671 /* TIMEAppDelegate.h */,
+				CF44FE2018772AD400C16671 /* TIMEAppDelegate.m */,
+				CF44FE2218772AD400C16671 /* Main.storyboard */,
+				CF44FE2518772AD400C16671 /* TIMEMasterViewController.h */,
+				CF44FE2618772AD400C16671 /* TIMEMasterViewController.m */,
+				CF44FEAB1877462400C16671 /* TIMEDetailTableViewController.h */,
+				CF44FEAC1877462400C16671 /* TIMEDetailTableViewController.m */,
+				CF44FE2B18772AD400C16671 /* Images.xcassets */,
+				CFBC71BE1878A06700D6A72F /* Receive Files */,
+				CF44FEB718774F0900C16671 /* Custom Cells */,
+				CF44FEAA18773F7900C16671 /* Core Data */,
+				CF44FE1718772AD400C16671 /* Supporting Files */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		CF44FE1718772AD400C16671 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE1818772AD400C16671 /* Stopwatch-Info.plist */,
+				CF44FE1918772AD400C16671 /* InfoPlist.strings */,
+				CF44FE1C18772AD400C16671 /* main.m */,
+				CF44FE1E18772AD400C16671 /* Stopwatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF44FE3818772AD400C16671 /* TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE3E18772AD400C16671 /* TimerTests.m */,
+				CF44FE3918772AD400C16671 /* Supporting Files */,
+			);
+			path = TimerTests;
+			sourceTree = "<group>";
+		};
+		CF44FE3918772AD400C16671 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE3A18772AD400C16671 /* StopwatchTests-Info.plist */,
+				CF44FE3B18772AD400C16671 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF44FE4A1877397100C16671 /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE4B1877397100C16671 /* Categories */,
+				CF44FE751877397100C16671 /* Core */,
+				CF44FE851877397100C16671 /* CoreData+MagicalRecord.h */,
+				CF44FE861877397100C16671 /* MagicalRecordVersion.h */,
+			);
+			path = MagicalRecord;
+			sourceTree = "<group>";
+		};
+		CF44FE4B1877397100C16671 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE4C1877397100C16671 /* DataImport */,
+				CF44FE5B1877397100C16671 /* NSManagedObject */,
+				CF44FE661877397100C16671 /* NSManagedObjectContext */,
+				CF44FE6F1877397100C16671 /* NSManagedObjectModel+MagicalRecord.h */,
+				CF44FE701877397100C16671 /* NSManagedObjectModel+MagicalRecord.m */,
+				CF44FE711877397100C16671 /* NSPersistentStore+MagicalRecord.h */,
+				CF44FE721877397100C16671 /* NSPersistentStore+MagicalRecord.m */,
+				CF44FE731877397100C16671 /* NSPersistentStoreCoordinator+MagicalRecord.h */,
+				CF44FE741877397100C16671 /* NSPersistentStoreCoordinator+MagicalRecord.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CF44FE4C1877397100C16671 /* DataImport */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE4D1877397100C16671 /* MagicalImportFunctions.h */,
+				CF44FE4E1877397100C16671 /* MagicalImportFunctions.m */,
+				CF44FE4F1877397100C16671 /* NSAttributeDescription+MagicalDataImport.h */,
+				CF44FE501877397100C16671 /* NSAttributeDescription+MagicalDataImport.m */,
+				CF44FE511877397100C16671 /* NSEntityDescription+MagicalDataImport.h */,
+				CF44FE521877397100C16671 /* NSEntityDescription+MagicalDataImport.m */,
+				CF44FE531877397100C16671 /* NSNumber+MagicalDataImport.h */,
+				CF44FE541877397100C16671 /* NSNumber+MagicalDataImport.m */,
+				CF44FE551877397100C16671 /* NSObject+MagicalDataImport.h */,
+				CF44FE561877397100C16671 /* NSObject+MagicalDataImport.m */,
+				CF44FE571877397100C16671 /* NSRelationshipDescription+MagicalDataImport.h */,
+				CF44FE581877397100C16671 /* NSRelationshipDescription+MagicalDataImport.m */,
+				CF44FE591877397100C16671 /* NSString+MagicalDataImport.h */,
+				CF44FE5A1877397100C16671 /* NSString+MagicalDataImport.m */,
+			);
+			path = DataImport;
+			sourceTree = "<group>";
+		};
+		CF44FE5B1877397100C16671 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE5C1877397100C16671 /* NSManagedObject+MagicalAggregation.h */,
+				CF44FE5D1877397100C16671 /* NSManagedObject+MagicalAggregation.m */,
+				CF44FE5E1877397100C16671 /* NSManagedObject+MagicalDataImport.h */,
+				CF44FE5F1877397100C16671 /* NSManagedObject+MagicalDataImport.m */,
+				CF44FE601877397100C16671 /* NSManagedObject+MagicalFinders.h */,
+				CF44FE611877397100C16671 /* NSManagedObject+MagicalFinders.m */,
+				CF44FE621877397100C16671 /* NSManagedObject+MagicalRecord.h */,
+				CF44FE631877397100C16671 /* NSManagedObject+MagicalRecord.m */,
+				CF44FE641877397100C16671 /* NSManagedObject+MagicalRequests.h */,
+				CF44FE651877397100C16671 /* NSManagedObject+MagicalRequests.m */,
+			);
+			path = NSManagedObject;
+			sourceTree = "<group>";
+		};
+		CF44FE661877397100C16671 /* NSManagedObjectContext */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE671877397100C16671 /* NSManagedObjectContext+MagicalObserving.h */,
+				CF44FE681877397100C16671 /* NSManagedObjectContext+MagicalObserving.m */,
+				CF44FE691877397100C16671 /* NSManagedObjectContext+MagicalRecord.h */,
+				CF44FE6A1877397100C16671 /* NSManagedObjectContext+MagicalRecord.m */,
+				CF44FE6B1877397100C16671 /* NSManagedObjectContext+MagicalSaves.h */,
+				CF44FE6C1877397100C16671 /* NSManagedObjectContext+MagicalSaves.m */,
+				CF44FE6D1877397100C16671 /* NSManagedObjectContext+MagicalThreading.h */,
+				CF44FE6E1877397100C16671 /* NSManagedObjectContext+MagicalThreading.m */,
+			);
+			path = NSManagedObjectContext;
+			sourceTree = "<group>";
+		};
+		CF44FE751877397100C16671 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FE761877397100C16671 /* MagicalRecord+Actions.h */,
+				CF44FE771877397100C16671 /* MagicalRecord+Actions.m */,
+				CF44FE781877397100C16671 /* MagicalRecord+ErrorHandling.h */,
+				CF44FE791877397100C16671 /* MagicalRecord+ErrorHandling.m */,
+				CF44FE7A1877397100C16671 /* MagicalRecord+iCloud.h */,
+				CF44FE7B1877397100C16671 /* MagicalRecord+iCloud.m */,
+				CF44FE7C1877397100C16671 /* MagicalRecord+Options.h */,
+				CF44FE7D1877397100C16671 /* MagicalRecord+Options.m */,
+				CF44FE7E1877397100C16671 /* MagicalRecord+Setup.h */,
+				CF44FE7F1877397100C16671 /* MagicalRecord+Setup.m */,
+				CF44FE801877397100C16671 /* MagicalRecord+ShorthandSupport.h */,
+				CF44FE811877397100C16671 /* MagicalRecord+ShorthandSupport.m */,
+				CF44FE821877397100C16671 /* MagicalRecord.h */,
+				CF44FE831877397100C16671 /* MagicalRecord.m */,
+				CF44FE841877397100C16671 /* MagicalRecordShorthand.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CF44FEAA18773F7900C16671 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FEA118773BB600C16671 /* timer.xcdatamodeld */,
+				CF44FEA718773F7300C16671 /* Time.h */,
+				CF44FEA818773F7300C16671 /* Time.m */,
+				CF44FEA418773F7200C16671 /* Observation.h */,
+				CF44FEA518773F7200C16671 /* Observation.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		CF44FEB718774F0900C16671 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF44FEAE1877484600C16671 /* identifierCell.h */,
+				CF44FEAF1877484600C16671 /* identifierCell.m */,
+				CF44FEB11877485A00C16671 /* dateCell.h */,
+				CF44FEB21877485A00C16671 /* dateCell.m */,
+				CF44FEB41877486600C16671 /* timeCell.h */,
+				CF44FEB51877486600C16671 /* timeCell.m */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		CFBC71BE1878A06700D6A72F /* Receive Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFBC71B81878A05D00D6A72F /* TIMEAnimationController.h */,
+				CFBC71B91878A05D00D6A72F /* TIMEAnimationController.m */,
+				CFBC71BA1878A05D00D6A72F /* TIMEReceiveFileViewController.h */,
+				CFBC71BB1878A05D00D6A72F /* TIMEReceiveFileViewController.m */,
+			);
+			name = "Receive Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF44FE0C18772AD400C16671 /* Stopwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF44FE4218772AD400C16671 /* Build configuration list for PBXNativeTarget "Stopwatch" */;
+			buildPhases = (
+				CF44FE0918772AD400C16671 /* Sources */,
+				CF44FE0A18772AD400C16671 /* Frameworks */,
+				CF44FE0B18772AD400C16671 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stopwatch;
+			productName = Timer;
+			productReference = CF44FE0D18772AD400C16671 /* Stopwatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF44FE3018772AD400C16671 /* StopwatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF44FE4518772AD400C16671 /* Build configuration list for PBXNativeTarget "StopwatchTests" */;
+			buildPhases = (
+				CF44FE2D18772AD400C16671 /* Sources */,
+				CF44FE2E18772AD400C16671 /* Frameworks */,
+				CF44FE2F18772AD400C16671 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF44FE3718772AD400C16671 /* PBXTargetDependency */,
+			);
+			name = StopwatchTests;
+			productName = TimerTests;
+			productReference = CF44FE3118772AD400C16671 /* StopwatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF44FE0518772AD400C16671 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TIME;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Francisco Javier Álvarez García";
+				TargetAttributes = {
+					CF44FE0C18772AD400C16671 = {
+						DevelopmentTeam = 33L4DPU4MB;
+					};
+					CF44FE3018772AD400C16671 = {
+						TestTargetID = CF44FE0C18772AD400C16671;
+					};
+				};
+			};
+			buildConfigurationList = CF44FE0818772AD400C16671 /* Build configuration list for PBXProject "Stopwatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF44FE0418772AD400C16671;
+			productRefGroup = CF44FE0E18772AD400C16671 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF44FE0C18772AD400C16671 /* Stopwatch */,
+				CF44FE3018772AD400C16671 /* StopwatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF44FE0B18772AD400C16671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44FE2C18772AD400C16671 /* Images.xcassets in Resources */,
+				CF44FE1B18772AD400C16671 /* InfoPlist.strings in Resources */,
+				CF44FE2418772AD400C16671 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44FE2F18772AD400C16671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44FE3D18772AD400C16671 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF44FE0918772AD400C16671 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44FE911877397100C16671 /* NSManagedObject+MagicalRecord.m in Sources */,
+				CF44FEA01877397100C16671 /* MagicalRecord.m in Sources */,
+				CF44FE881877397100C16671 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				CF44FEA318773BB600C16671 /* timer.xcdatamodeld in Sources */,
+				CF44FE921877397100C16671 /* NSManagedObject+MagicalRequests.m in Sources */,
+				CF44FE8C1877397100C16671 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				CF44FEB01877484600C16671 /* identifierCell.m in Sources */,
+				CF44FE871877397100C16671 /* MagicalImportFunctions.m in Sources */,
+				CF44FE961877397100C16671 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				CF44FEA918773F7300C16671 /* Time.m in Sources */,
+				CF44FE931877397100C16671 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				CF44FE891877397100C16671 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				CF44FE1D18772AD400C16671 /* main.m in Sources */,
+				CF44FE991877397100C16671 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				CF44FEAD1877462400C16671 /* TIMEDetailTableViewController.m in Sources */,
+				CF44FEB31877485A00C16671 /* dateCell.m in Sources */,
+				CF44FE971877397100C16671 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				CF44FE2718772AD400C16671 /* TIMEMasterViewController.m in Sources */,
+				CF44FE981877397100C16671 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				CF44FE9C1877397100C16671 /* MagicalRecord+iCloud.m in Sources */,
+				CF44FE9F1877397100C16671 /* MagicalRecord+ShorthandSupport.m in Sources */,
+				CF44FE901877397100C16671 /* NSManagedObject+MagicalFinders.m in Sources */,
+				CF44FE8B1877397100C16671 /* NSObject+MagicalDataImport.m in Sources */,
+				CF44FE8D1877397100C16671 /* NSString+MagicalDataImport.m in Sources */,
+				CF44FEA618773F7200C16671 /* Observation.m in Sources */,
+				CF44FE951877397100C16671 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				CFBC71BC1878A05D00D6A72F /* TIMEAnimationController.m in Sources */,
+				CF44FE8E1877397100C16671 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				CF44FE9D1877397100C16671 /* MagicalRecord+Options.m in Sources */,
+				CF44FEB61877486600C16671 /* timeCell.m in Sources */,
+				CF44FE9E1877397100C16671 /* MagicalRecord+Setup.m in Sources */,
+				CF44FE9B1877397100C16671 /* MagicalRecord+ErrorHandling.m in Sources */,
+				CF44FE9A1877397100C16671 /* MagicalRecord+Actions.m in Sources */,
+				CF44FE2118772AD400C16671 /* TIMEAppDelegate.m in Sources */,
+				CF44FE941877397100C16671 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				CF44FE8A1877397100C16671 /* NSNumber+MagicalDataImport.m in Sources */,
+				CF44FE8F1877397100C16671 /* NSManagedObject+MagicalDataImport.m in Sources */,
+				CFBC71BD1878A05D00D6A72F /* TIMEReceiveFileViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44FE2D18772AD400C16671 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44FE3F18772AD400C16671 /* TimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF44FE3718772AD400C16671 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF44FE0C18772AD400C16671 /* Stopwatch */;
+			targetProxy = CF44FE3618772AD400C16671 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF44FE1918772AD400C16671 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF44FE1A18772AD400C16671 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF44FE2218772AD400C16671 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF44FE2318772AD400C16671 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF44FE3B18772AD400C16671 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF44FE3C18772AD400C16671 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF44FE4018772AD400C16671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF44FE4118772AD400C16671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF44FE4318772AD400C16671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Timer/Stopwatch-Prefix.pch";
+				INFOPLIST_FILE = "Timer/Stopwatch-Info.plist";
+				PRODUCT_NAME = Stopwatch;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF44FE4418772AD400C16671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Timer/Stopwatch-Prefix.pch";
+				INFOPLIST_FILE = "Timer/Stopwatch-Info.plist";
+				PRODUCT_NAME = Stopwatch;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF44FE4618772AD400C16671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Timer.app/Timer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Timer/Timer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TimerTests/StopwatchTests-Info.plist";
+				PRODUCT_NAME = StopwatchTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CF44FE4718772AD400C16671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Timer.app/Timer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Timer/Timer-Prefix.pch";
+				INFOPLIST_FILE = "TimerTests/StopwatchTests-Info.plist";
+				PRODUCT_NAME = StopwatchTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF44FE0818772AD400C16671 /* Build configuration list for PBXProject "Stopwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF44FE4018772AD400C16671 /* Debug */,
+				CF44FE4118772AD400C16671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF44FE4218772AD400C16671 /* Build configuration list for PBXNativeTarget "Stopwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF44FE4318772AD400C16671 /* Debug */,
+				CF44FE4418772AD400C16671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF44FE4518772AD400C16671 /* Build configuration list for PBXNativeTarget "StopwatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF44FE4618772AD400C16671 /* Debug */,
+				CF44FE4718772AD400C16671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF44FEA118773BB600C16671 /* timer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF44FEA218773BB600C16671 /* timer.xcdatamodel */,
+			);
+			currentVersion = CF44FEA218773BB600C16671 /* timer.xcdatamodel */;
+			path = timer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF44FE0518772AD400C16671 /* Project object */;
+}

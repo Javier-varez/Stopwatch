@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B3116" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Observation" representedClassName="Observation" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="timesForObservation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Time" inverseName="linkedObservation" inverseEntity="Time" syncable="YES"/>
+    </entity>
+    <entity name="Time" representedClassName="Time" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="linkedObservation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Observation" inverseName="timesForObservation" inverseEntity="Observation" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Observation" positionX="151" positionY="162" width="128" height="88"/>
+        <element name="Time" positionX="351" positionY="198" width="128" height="103"/>
+    </elements>
+</model>
